@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie Restaurant - Contact Us</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Foodie</div>
+        
+        <div class="hamburger" id="hamburger">
+            <iconify-icon icon="mdi:menu" width="36" height="36"></iconify-icon>
+        </div>
+        <nav id="nav-links" class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="menu.html">Our Menu</a>
+            <a class="nav-link" href="reserve.html">Reserve</a>
+            <a class="nav-link" href="contact.html">Contact</a>   
+        </nav>
+    </header>
+    
+    <section class="contact-hero fade-in-x">
+        <div class="contact-overlay">
+            <h1>Contact Us</h1>
+        </div>
+        <iconify-icon class="scroll-down" icon="mdi:chevron-down" width="36" height="36"></iconify-icon>
+    </section>
+    
+    <section class="contact-section">
+        <div class="contact-container fade-in-y">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Have any questions, suggestions, or feedback? We'd love to hear from you!</p>
+                <div class="info-box">
+                    <p><iconify-icon icon="gridicons:location"></iconify-icon>: 123 Foodie Lane, Lavos, Nigeria</p>
+                    <p><iconify-icon icon="mingcute:phone-fill"></iconify-icon>: +234 801 234 5678</p>
+                    <p><iconify-icon icon="weui:email-filled"></iconify-icon>: domain@gmail.com</p>
+                </div>
+            </div>
+            
+            <form class="contact-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name.." required />
+                
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Subject" required />
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+                
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="text-content">
+                <h3>Do you have any questions?</h3>
+                <p>Contact us and we will answer your questions.</p>
+            </div>
+            <a class="contact-btn" href="contact.html">Contact Us</a>
+        </div>
+        
+        <hr>
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reserve.html">Reserve</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <p><strong>Phone:</strong><br>+234 801 234 5678</p>
+                <p><strong>Address:</strong><br>123 Foodie Lane, Lagos, Nigeria</p>
+                <p><strong>Email:</strong><br>domain@gmail.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="#"><iconify-icon icon="ic:sharp-facebook"></iconify-icon></a>
+                    <a href="#"><iconify-icon icon="mingcute:instagram-line"></iconify-icon></a>
+                    <a href="#"><iconify-icon icon="prime:twitter"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Foodie Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

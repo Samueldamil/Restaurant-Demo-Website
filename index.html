@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie Restaurant - Home</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Foodie</div>
+        
+        <div class="hamburger" id="hamburger">
+            <iconify-icon icon="mdi:menu" width="36" height="36"></iconify-icon>
+        </div>
+        <nav id="nav-links" class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="menu.html">Our Menu</a>
+            <a class="nav-link" href="reserve.html">Reserve</a>
+            <a class="nav-link" href="contact.html">Contact</a>   
+        </nav>
+    </header>
+    
+    <section class="intro fade-in-x">
+        <div class="overlay">
+            <h1>Foodie Restaurant</h1>
+            <p>Discover the exquisite spot where you<br> experience the best flavor in town.</p>
+            <a href="reserve.html">Book Your Table</a>
+        </div>
+        <iconify-icon class="scroll-down" icon="mdi:chevron-down" width="36" height="36"></iconify-icon>
+    </section>
+    
+    <section class="why-choose-us fade-in-y">
+        <h2>Why Choose Us?</h2>
+        <p class="section-intro">At Foodie Restaurant, we're passionate about delivering unforgettable dining experience. Here's why our guests loves us:</p>
+        <div class="features">
+            <div class="feature feature-1 feature-tall">
+                <div class="overlay-text">
+                    <h3>Fresh Meals</h3>
+                    <p>Enjoy meals made daily with the freshest ingredients.</p>
+                </div>
+            </div>
+            
+            <div class="feature feature-2">
+                <div class="overlay-text">
+                    <h3>Quick Service</h3>
+                    <p>Your order is served fast without compromising quality.</p>
+                </div>
+            </div>
+            
+            <div class="feature feature-3">
+                <div class="overlay-text">
+                    <h3>Customer Favourite</h3>
+                    <p>Highly rated by returning happy customers.</p>
+                </div>
+            </div>
+        </div>
+        <a href="about.html" class="learn-more-btn">Learn More</a>
+    </section>
+    
+    <section class="gallery fade-in-y">
+        <h2>Our Gallery</h2>
+        <p class="section-intro">Take a peek into our cozy space and beautifully presented dishes.</p>
+        <div class="gallery-wrapper">
+            <button class="gallery-btn left">&#10094</button>
+            
+            <div class="gallery-container">
+                <img src="./images/restaurant-interior.jpg" alt="Gallery 1" />
+                <img src="./images/feature-1.jpg" alt="Gallery 2" />
+                <img src="./images/feature-2.jpg" alt="Gallery 3" />
+                <img src="./images/feature-3.jpg" alt="Gallery 3" />
+            </div>
+            
+            <button class="gallery-btn right">&#10095</button>
+        </div>
+        <div class="gallery-dots"></div>
+    </section>
+    
+    <section class="menu-section fade-in-y">
+        <h2>Our Menu</h2>
+        <p class="section-intro">Explore a delightful variety of dishes crafted with love and freshest ingredients.</p>
+        <div class="menu-items">
+            <div class="menu-card tall" style="background-image: url('./images/pasta.jpeg');">
+               <div class="menu-text">
+                   <h3>Spaghetti Pasta</h3>
+                   <p>$12.99</p>
+               </div>
+            </div>
+            
+            <div class="menu-card" style="background-image: url('./images/burger.jpeg');">
+                <div class="menu-text">
+                    <h3>Classic Burger</h3>
+                    <p>$9.99</p>
+                </div>
+            </div>
+            
+            <div class="menu-card" style="background-image: url('./images/salad.jpeg');">
+                <div class="menu-text">
+                    <h3>Greek Salad</h3>
+ 
+                    <p>$7.99</p>
+                </div>
+            </div>
+        </div>
+        
+        <a href="menu.html" class="view-menu-btn">View Full Menu</a>
+    </section>
+    
+    <section class="reservation-section fade-in-x">
+        <div class="reservation-overlay">
+            <div class="reservation-content">
+                <h2>Reserve Your Spot</h2>
+                <p>Enjoy an unforgettable dining experience.<br>Book your table in advance.</p>
+                <a href="reserve.html" class="reservation-btn">Book Your Table</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="review-section fade-in-y">
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-intro">Hear from our happy guests who have enjoyed memorable meals and warm hospitality.</p>
+        <div class="review-slider-wrapper">
+            <div class="review-slider">
+                <div class="review-card">
+                    <p>"The food was absolutely amazing! Best pasta I've had in ages."</p>
+                    <h4>- Sarah M.</h4>
+                </div>
+                
+                <div class="review-card">
+                    <p>"Beautiful ambience, friendly staff and delicious meals. 10/10!"</p>
+                    <h4>- James O.</h4>
+                </div>
+                
+                <div class="review-card">
+                   <p>"Perfect place for date night. We'll definitely come back again."</p>
+                   <h4>- Anita K.</h4>
+                </div>
+            </div>
+            <button class="review-btn left">&#8592</button>
+            <button class="review-btn right">&#8594</button>
+        </div>
+        <div class="review-dots"></div>
+    </section>
+    
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="text-content">
+                <h3>Do you have any questions?</h3>
+                <p>Contact us and we will answer your questions.</p>
+            </div>
+            <a class="contact-btn" href="contact.html">Contact Us</a>
+        </div>
+        
+        <hr>
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reserve.html">Reserve</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <p><strong>Phone:</strong><br>+234 801 234 5678</p>
+                <p><strong>Address:</strong><br>123 Foodie Lane, Lagos, Nigeria</p>
+                <p><strong>Email:</strong><br>domain@gmail.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="#"><iconify-icon icon="ic:sharp-facebook"></iconify-icon></a>
+                    <a href="#"><iconify-icon icon="mingcute:instagram-line"></iconify-icon></a>
+                    <a href="#"><iconify-icon icon="prime:twitter"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Foodie Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
+

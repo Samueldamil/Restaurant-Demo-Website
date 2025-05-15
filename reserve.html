@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie Restaurant - Reserve</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Foodie</div>
+        
+        <div class="hamburger" id="hamburger">
+            <iconify-icon icon="mdi:menu" width="36" height="36"></iconify-icon>
+        </div>
+        <nav id="nav-links" class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="menu.html">Our Menu</a>
+            <a class="nav-link" href="reserve.html">Reserve</a>
+            <a class="nav-link" href="contact.html">Contact</a>   
+        </nav>
+    </header>
+    
+    <section class="reserve-hero fade-in-x">
+        <div class="reserve-overlay">
+            <h1>Reserve a Table</h1>
+            <p>Enjoy fine dining with a simple reservation.</p>
+        </div>
+        <iconify-icon class="scroll-down" icon="mdi:chevron-down" width="36" height="36"></iconify-icon>
+    </section>
+    
+    <section class="reserve-form-section">
+        <div class="form-wrapper fade-in-y">
+            <h2>Make a Reservation</h2>
+            <form class="reservation-form">
+                <label for="reservation-name">Full Name</label>
+                <input type="text" id="reservation-name" name="name" placeholder="Enter your full name" required />
+                
+                <label for="reservation-email">Email</label>
+                <input type="email" id="reservation-email" name="email" placeholder="Enter your email" required/>
+                
+                <label for="reservation-phone">Phone Number</label>
+                <input type="tel" id="reservation-phone" name="phone" placeholder="e.g +234 801 234 5678" required />
+                
+                <label for="reservation-date">Date</label>
+                <input type="date" id="reservation-date" name="date" required />
+                
+                <label for="reservation-time">Time</label>
+                <input type="time" id="reservation-time" name="time" required />
+                
+                <label for="reservation-guests">Number of Guests</label>
+                <input type="number" id="reservation-guests" name="guests" placeholder="e.g 2" min="1" max="20" required />
+                
+                <label for="special-requests">Special Requests (Optional)</label>
+                <textarea id="special-requests" name="requests" placeholder="Let us know if you have any special requests..." rows="4"></textarea>
+                
+                <button class="reserve-btn" type="submit">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="text-content">
+                <h3>Do you have any questions?</h3>
+                <p>Contact us and we will answer your questions.</p>
+            </div>
+            <a class="contact-btn" href="contact.html">Contact Us</a>
+        </div>
+        
+        <hr>
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reserve.html">Reserve</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <p><strong>Phone:</strong><br>+234 801 234 5678</p>
+                <p><strong>Address:</strong><br>123 Foodie Lane, Lagos, Nigeria</p>
+                <p><strong>Email:</strong><br>domain@gmail.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="#"><iconify-icon icon="ic:sharp-facebook"></iconify-icon></a>
+                    <a href="#"><iconify-icon icon="mingcute:instagram-line"></iconify-icon></a>
+                    <a href="#"><iconify-icon icon="prime:twitter"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Foodie Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
